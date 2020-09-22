@@ -1,9 +1,8 @@
 <?php include_once '_header.php'; ?>
-
     <h1>Home page</h1>
     <ul>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
     </ul>
 <?php include_once '_footer.php'; ?>
