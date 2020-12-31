@@ -1,17 +1,29 @@
 <?php
 namespace App;
 
+/**
+ * Class Personne
+ * @package App
+ */
 class Personne
 {
+
+    //------------------------------------------------------------------------------------------- $db
     private $id;
+
+    //------------------------------------------------------------------------------------------ $nom
     private $nom;
+
+    //--------------------------------------------------------------------------------------- $prenom
     private $prenom;
 
+    //----------------------------------------------------------------------------------- __construct
     public function __construct($data)
     {
         $this->hydrate($data);
     }
 
+    //---------------------------------------------------------------------------------------- getId
     /**
      * @return integer
      */
@@ -20,6 +32,7 @@ class Personne
         return $this->id;
     }
 
+    //---------------------------------------------------------------------------------------- getNom
     /**
      * @return string
      */
@@ -28,6 +41,7 @@ class Personne
         return $this->nom;
     }
 
+    //------------------------------------------------------------------------------------- getPrenom
     /**
      * @return string
      */
@@ -36,30 +50,7 @@ class Personne
         return $this->prenom;
     }
 
-    /**
-     * @param $id integer
-     */
-    public function setId($id)
-    {
-        $this->id = (int) $id;
-    }
-
-    /**
-     * @param $nom string
-     */
-    public function setNom($nom)
-    {
-        $this->nom = $nom;
-    }
-
-    /**
-     * @param $prenom string
-     */
-    public function setPrenom($prenom)
-    {
-        $this->prenom = $prenom;
-    }
-
+    //--------------------------------------------------------------------------------------- hydrate
     /**
      * @param $data array
      */
@@ -73,4 +64,32 @@ class Personne
         }
     }
 
+    //----------------------------------------------------------------------------------------- setId
+    /**
+     * @param $id integer
+     */
+    public function setId($id)
+    {
+        $this->id = (int) $id;
+    }
+
+    //---------------------------------------------------------------------------------------- setNom
+    /**
+     * @param $nom string
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    //------------------------------------------------------------------------------------- setPrenom
+    /**
+     * @param $prenom string
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+
 }
+

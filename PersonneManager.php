@@ -1,37 +1,22 @@
 <?php
 namespace App;
 
+/**
+ * Class PersonneManager
+ */
 class PersonneManager
 {
+
+    //------------------------------------------------------------------------------------------- $db
     private $db;
 
+    //----------------------------------------------------------------------------------- __construct
     public function __construct($db)
     {
         $this->setDb($db);
     }
 
-    public function setDb($db)
-    {
-        $this->db = $db;
-    }
-
-    /**
-     * @param $id integer
-     * @return Personne
-     */
-    public function get($id)
-    {
-
-    }
-
-    /**
-     * @return Personne[]
-     */
-    public function getList()
-    {
-
-    }
-
+    //------------------------------------------------------------------------------------------- add
     /**
      * @param Personne $personne
      */
@@ -44,14 +29,42 @@ class PersonneManager
         $q->execute();
     }
 
-    public function update(Personne $personne)
-    {
-
-    }
-
+    //---------------------------------------------------------------------------------------- delete
     public function delete(Personne $personne)
     {
 
     }
 
+    //------------------------------------------------------------------------------------------- get
+    /**
+     * @param $id integer
+     * @return Personne
+     */
+    public function get($id)
+    {
+
+    }
+
+    //--------------------------------------------------------------------------------------- getList
+    /**
+     * @return Personne[]
+     */
+    public function getList()
+    {
+
+    }
+
+    //----------------------------------------------------------------------------------------- setDb
+    public function setDb($db)
+    {
+        $this->db = $db;
+    }
+
+    //---------------------------------------------------------------------------------------- update
+    public function update(Personne $personne)
+    {
+
+    }
+
 }
+
